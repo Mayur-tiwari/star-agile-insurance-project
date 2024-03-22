@@ -7,11 +7,10 @@
 
   - name : Install Docker
     command : sudo apt-get install -y docker.io
-    become : yes
-
+  
   - name : Start Docker Service
     command : sudo systemctl start docker
-    become : yes
+  
 
   - name: Deploy Docker Container
     command: docker run -itd -p 8084:8081 mayurtiwari/insurance-img:latest
