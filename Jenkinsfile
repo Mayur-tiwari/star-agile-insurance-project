@@ -2,7 +2,7 @@ pipeline {
     agent any
  
     stages {
-        stage('Cloning') {
+        stage('Cloniing') {
             steps {
                 echo 'Cloining the code from the github repository.'
                 git 'https://github.com/Mayur-tiwari/star-agile-insurance-project.git'
